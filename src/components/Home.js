@@ -1,17 +1,16 @@
-import styles from "../styles";
+import {Description, ShopImage, Title } from "../styles";
 
 
 const Home =() => {
     return (
-        
-        <div style={styles.text}>
-    <h1 >P-Box Store</h1>
-    <h3 >Your Health is our Care!</h3>
-    <p>“ Pbox store provide pill dispenser that automatically provide the right amount of pills in the right time and
-       remined you to take it.“</p>
-      <img style={styles.shopImage} src="./pharmacy-shop.jpg" alt="pharmacy shop"/>
-      </div>
- );
-    };
-
+    <>
+    <Title >P-Box Store</Title>
+    <Title >Your Health is our Care!</Title>
+    <Description>“ Pbox store provide pill dispenser that automatically provide the right amount of pills in the right time and
+       remined you to take it.“</Description>
+      <ShopImage src="./pharmacy-shop.jpg" alt="pharmacy shop"/>
+      
+    </>
+  );
+};
     export default Home;

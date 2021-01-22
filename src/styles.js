@@ -1,19 +1,51 @@
-const styles = {
-    body: { backgroundColor: "black" },
-    device: { margin: "20px" },
-    deviceImage: { width: "200px", height: "200px" },
-    list: {
-      alignItems: "center",
-      justifyContent: "center",
-      display: "flex",
-    },
-    shopImage: {
-      display: "block",
-      marginLeft: "auto",
-      marginRight: "auto",
-      width: "70%",
-    },
-    text: { textAlign: "center" },
-  };
+import styled, { createGlobalStyle } from "styled-components";
 
-  export default styles;
+export const Title = styled.h1`
+  text-align: center;
+`;
+
+export const Description = styled.p`
+  text-align: center;
+`;
+
+
+export const ShopImage = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+`;
+
+export const Device = styled.div`
+  margin: 20px;
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  p {
+    text-align: center;
+    &.price {
+      color: ${(props) => props.theme.color};
+    }
+`;
+
+export const List = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+`;
+
+  export const GlobalStyle = createGlobalStyle`
+body {
+  color: ${(props) => props.theme.mainColor};
+  background-color: ${(props) => props.theme.backgroundColor}}`;
+
+
+  /*export const ProductWrapper  = styled.div`
+  p {
+    text-align: center;
+    &.price {
+      color: ${(props) => props.theme.color};
+    }
+  }`;*/
+
