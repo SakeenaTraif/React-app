@@ -2,6 +2,7 @@ import styled, { createGlobalStyle } from "styled-components";
 
 export const Title = styled.h1`
   text-align: center;
+  color: maroon;
 `;
 
 export const Description = styled.p`
@@ -13,7 +14,7 @@ export const ShopImage = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 35%;
 `;
 
 export const Device = styled.div`
